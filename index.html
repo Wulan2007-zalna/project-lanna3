@@ -1,37 +1,68 @@
+# index.html
+
+```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Edukasi Gunung & Geowisata Jawa Timur</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edukasi Gunung & Geowisata Jawa Timur</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <nav class="navbar">
+    <h2 class="brand">GeoJatim</h2>
+    <ul class="nav-links">
+      <li>Home</li>
+      <li>Gunung</li>
+      <li>Geowisata</li>
+      <li>Kontak</li>
+    </ul>
+  </nav>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <h2>GeoJatim</h2>
-        <ul>
-            <li>Home</li>
-            <li>Gunung</li>
-            <li>Geowisata</li>
-            <li>Fun Fact</li>
-        </ul>
-    </nav>
+  <header class="hero">
+    <div class="hero-inner">
+      <h1>Eksplorasi Gunung & Geowisata Jawa Timur</h1>
+      <p>Temukan gunung-gunung populer, baca penjelasan singkat, dan dapatkan fun fact menarik.</p>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <h1>Eksplorasi Gunung & Geowisata Jawa Timur</h1>
-        <p>Temukan penjelasan menarik tentang gunung, geowisata, dan fakta uniknya!</p>
+      <div class="controls">
+        <input id="search" type="search" placeholder="Cari nama gunung..." />
+        <select id="filter">
+          <option value="all">Semua</option>
+          <option value="tinggi">> 2.000 m</option>
+          <option value="sedang">1.000 - 2.000 m</option>
+          <option value="rendah">< 1.000 m</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="grid" id="mountainGrid">
+      <!-- Cards akan diisi oleh script.js -->
     </section>
 
-    <!-- FUN FACT BUTTON -->
-    <div class="container">
-        <button id="btn">Tampilkan Fun Fact Gunung</button>
-        <p id="message"></p>
+    <!-- Modal detail -->
+    <div class="modal" id="modal" aria-hidden="true">
+      <div class="modal-content">
+        <button class="close" id="closeModal">✕</button>
+        <img id="modalImg" src="" alt="gambar gunung">
+        <h2 id="modalTitle"></h2>
+        <p id="modalDesc"></p>
+        <p class="meta" id="modalMeta"></p>
+        <div class="funfact"><strong>Fun Fact:</strong> <span id="modalFact"></span></div>
+      </div>
     </div>
 
-    <script src="script.js"></script>
+  </main>
+
+  <footer class="footer">
+    <p>© GeoJatim — Edukasi Gunung & Geowisata Jawa Timur</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
+```
+
