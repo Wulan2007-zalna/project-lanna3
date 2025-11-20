@@ -132,7 +132,8 @@ body {
 }
 
 /* Remove modal image completely since you don't want it */
-#modalImg {
+#filter,
+#search {
   display: none !important;
 }
 
