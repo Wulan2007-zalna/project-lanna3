@@ -2,7 +2,7 @@
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
-  background: #E0FFFF;
+  background: #E6E6FA;
 }
 
 /* NAVBAR */
@@ -11,7 +11,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background: #1E90FF;
+  background:#483D8B;
   color: white;
 }
 
@@ -26,7 +26,7 @@ body {
 .hero {
   text-align: center;
   padding: 80px 20px;
-  background:#87CEFA;
+  background:#9370DB;
   color: white;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -61,7 +61,7 @@ body {
 
 .card h3 {
   margin: 0;
-  color: #87CEFA;
+  color: #9370DB;
 }
 
 .card p {
@@ -70,7 +70,7 @@ body {
 
 .height {
   font-weight: bold;
-  color: #1E90FF;
+  color: #483D8B;
 }
 
 /* MODAL */
@@ -96,7 +96,7 @@ body {
   position: absolute;
   top: 12px;
   right: 12px;
-  background: #1E90FF;
+  background: #483D8B;
   color: white;
   border: none;
   padding: 6px 12px;
@@ -109,6 +109,6 @@ body {
   text-align: center;
   padding: 20px;
   margin-top: 40px;
-  background: #1E90FF;
+  background: #483D8B;
   color: white;
 }
