@@ -118,9 +118,6 @@ const closeModalBtn = document.getElementById("closeModal");
 const search = document.getElementById("search");
 
 
-// ========================
-// RENDER KARTU GUNUNG
-// ========================
 function renderCards(list) {
   grid.innerHTML = "";
 
@@ -128,10 +125,13 @@ function renderCards(list) {
     const card = document.createElement("div");
     card.className = "card";
 
+    // Tidak ada tag <img> sama sekali
     card.innerHTML = `
-      <h3>${m.name}</h3>
-      <p>${m.area}</p>
-      <p class="height">Ketinggian: ${m.elev} mdpl</p>
+      <div class="card-info">
+        <h3>${m.name}</h3>
+        <p>${m.area}</p>
+        <p class="height">Ketinggian: ${m.elev} mdpl</p>
+      </div>
     `;
 
     card.addEventListener("click", () => openModal(m));
