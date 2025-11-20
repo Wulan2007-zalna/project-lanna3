@@ -4,52 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GeoJatim</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
   <!-- NAVBAR -->
   <nav class="navbar">
     <h2 class="brand">GeoJatim</h2>
     <ul class="nav-links">
-      <li><a href="#home" class="nav-link">Home</a></li>
-      <li><a href="#gunung" class="nav-link">Gunung</a></li>
-      <li><a href="#geowisata" class="nav-link">Geowisata</a></li>
-      <li><a href="#kontak" class="nav-link">Kontak</a></li>
+      <li>Home</li>
+      <li>Gunung</li>
+      <li>Geowisata</li>
+      <li>Kontak</li>
     </ul>
   </nav>
 
-  <!-- HERO / HOME -->
-  <header class="hero" id="home">
-    <div class="hero-inner">
-      <h1>Eksplorasi Gunung & Geowisata Jawa Timur</h1>
-      <p>Temukan gunung-gunung populer, baca penjelasan singkat, dan dapatkan fun fact menarik.</p>
-    </div>
+  <!-- HERO -->
+  <header class="hero">
+    <h1>Eksplorasi Gunung & Geowisata Jawa Timur</h1>
+    <p>Temukan gunung-gunung populer, baca penjelasan singkat, dan dapatkan fun fact menarik.</p>
   </header>
 
-  <!-- DAFTAR GUNUNG -->
-  <section class="container" id="gunung">
-    <h2 class="section-title">Daftar Gunung</h2>
+  <!-- LIST GUNUNG (WAJIB ADA!) -->
+  <main class="container">
     <section class="grid" id="mountain-list"></section>
-  </section>
+  </main>
 
-  <!-- GEOWISATA -->
-  <section class="container" id="geowisata">
-    <h2 class="section-title">Geowisata</h2>
-    <p>Konten Geowisata bisa kamu isi nanti…</p>
-  </section>
-
-  <!-- KONTAK -->
-  <section class="container" id="kontak">
-    <h2 class="section-title">Kontak Kami</h2>
-    <p>Email: info@geojatim.com</p>
-  </section>
+  <!-- MODAL -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <button class="close" id="closeModal">✕</button>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDesc"></p>
+      <p class="meta" id="modalMeta"></p>
+      <p><strong>Fun Fact:</strong> <span id="modalFact"></span></p>
+    </div>
+  </div>
 
   <!-- FOOTER -->
   <footer class="footer">
     <p>© GeoJatim — Edukasi Gunung & Geowisata Jawa Timur</p>
   </footer>
 
+  <!-- SCRIPT -->
   <script src="script.js"></script>
 </body>
 </html>
