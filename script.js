@@ -1,6 +1,5 @@
 
 const mountains = [
- const mountains = [
   { name: "Semeru", area: "Malang / Lumajang", elev: 3676, desc: "Gunung berapi stratovolcano aktif dengan puncak Mahameru dan kawah Jonggring Saloko.", fact: "Mengalami erupsi strombolian kecil tiap 10–20 menit.", difficulty: "Sulit" },
   { name: "Arjuno", area: "Pasuruan / Malang / Batu", elev: 3339, desc: "Gunung besar berselimut hutan dan sabana.", fact: "Memiliki banyak situs sejarah seperti Candi Sepilar.", difficulty: "Menengah – Sulit" },
   { name: "Welirang", area: "Mojokerto / Batu / Pasuruan", elev: 3156, desc: "Gunung vulkanik aktif dengan tambang belerang tradisional.", fact: "Namanya berarti Gunung Belerang.", difficulty: "Menengah" },
@@ -48,7 +47,7 @@ const mountains = [
   { name: "Sidoramping", area: "Malang", elev: 1200, desc: "Perbukitan di sisi Arjuno–Welirang.", fact: "Sering dilewati warga mencari hasil hutan.", difficulty: "Mudah – Menengah" },
 ];
 
-];
+
 
 // ========================
 // ELEMENT HTML
