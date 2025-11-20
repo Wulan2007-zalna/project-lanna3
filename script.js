@@ -154,17 +154,7 @@ search.addEventListener("input", () => {
   renderMountains(filtered);
 });
 
-// FILTER TINGGI
-const filterSelect = document.getElementById("filter");
-filterSelect.addEventListener("change", () => {
-  let filtered = mountains;
 
-  if (filterSelect.value === "tinggi") filtered = mountains.filter(m => m.elev > 2000);
-  if (filterSelect.value === "sedang") filtered = mountains.filter(m => m.elev >= 1000 && m.elev <= 2000);
-  if (filterSelect.value === "rendah") filtered = mountains.filter(m => m.elev < 1000);
-
-  renderMountains(filtered);
-});
 
 // TAMPILKAN REKOMENDASI AWAL
 document.addEventListener("DOMContentLoaded", () => renderMountains(mountains));
