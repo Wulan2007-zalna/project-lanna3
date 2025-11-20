@@ -3,11 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Edukasi Gunung & Geowisata Jawa Timur</title>
+  <title>GeoJatim — Edukasi Gunung & Geowisata Jawa Timur</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+
+  <!-- NAVBAR -->
   <nav class="navbar">
     <h2 class="brand">GeoJatim</h2>
     <ul class="nav-links">
@@ -18,41 +22,30 @@
     </ul>
   </nav>
 
+  <!-- HERO -->
   <header class="hero">
-    <div class="hero-inner">
-      <h1>Eksplorasi Gunung & Geowisata Jawa Timur</h1>
-      <p>Temukan gunung-gunung populer, baca penjelasan singkat, dan dapatkan fun fact menarik.</p>
-
-    
-    </div>
+    <h1>Eksplorasi Gunung & Geowisata Jawa Timur</h1>
+    <p>Temukan gunung-gunung populer, baca penjelasan singkat, dan dapatkan fun fact menarik.</p>
   </header>
 
+  <!-- LIST GUNUNG -->
   <main class="container">
-    
-    <!-- GRID TANPA GAMBAR -->
     <section class="grid" id="mountain-list"></section>
 
-    <!-- MODAL DETAIL GUNUNG -->
-    <div class="modal" id="modal" aria-hidden="true">
+    <!-- MODAL -->
+    <div class="modal" id="modal">
       <div class="modal-content">
         <button class="close" id="closeModal">✕</button>
-        
-        <!-- GAMBAR MODAL (default tersembunyi) -->
-        <img id="modalImg" style="display:none; width:100%; border-radius:10px;">
 
         <h2 id="modalTitle"></h2>
         <p id="modalDesc"></p>
         <p class="meta" id="modalMeta"></p>
-
-        <div class="funfact">
-          <strong>Fun Fact:</strong>
-          <span id="modalFact"></span>
-        </div>
+        <p><strong>Fun Fact:</strong> <span id="modalFact"></span></p>
       </div>
     </div>
-
   </main>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <p>© GeoJatim — Edukasi Gunung & Geowisata Jawa Timur</p>
   </footer>
