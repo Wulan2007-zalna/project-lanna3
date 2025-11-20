@@ -23,31 +23,32 @@
       <h1>Eksplorasi Gunung & Geowisata Jawa Timur</h1>
       <p>Temukan gunung-gunung populer, baca penjelasan singkat, dan dapatkan fun fact menarik.</p>
 
-      <div class="controls">
-        <input id="search" type="search" placeholder="Cari nama gunung..." />
-        <select id="filter">
-          <option value="all">Semua</option>
-          <option value="tinggi">&gt; 2.000 m</option>
-          <option value="sedang">1.000 - 2.000 m</option>
-          <option value="rendah">&lt; 1.000 m</option>
-        </select>
-      </div>
-    </div>
   </header>
 
   <main class="container">
+    
+    <!-- GRID TANPA GAMBAR -->
     <section class="grid" id="mountain-list"></section>
 
+    <!-- MODAL DETAIL GUNUNG -->
     <div class="modal" id="modal" aria-hidden="true">
       <div class="modal-content">
         <button class="close" id="closeModal">✕</button>
-       <img id="modalImg" style="display:none">
+        
+        <!-- GAMBAR MODAL (default tersembunyi) -->
+        <img id="modalImg" style="display:none; width:100%; border-radius:10px;">
+
         <h2 id="modalTitle"></h2>
         <p id="modalDesc"></p>
         <p class="meta" id="modalMeta"></p>
-        <div class="funfact"><strong>Fun Fact:</strong> <span id="modalFact"></span></div>
+
+        <div class="funfact">
+          <strong>Fun Fact:</strong>
+          <span id="modalFact"></span>
+        </div>
       </div>
     </div>
+
   </main>
 
   <footer class="footer">
