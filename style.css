@@ -1,91 +1,56 @@
+/* GLOBAL */
 body {
-font-family: "Poppins", Arial, sans-serif;
-background: linear-gradient(135deg, #e0f2f1, #b2dfdb);
-margin: 0;
-padding: 0;
-color: #333;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #e8f5e9;
 }
 
-
-.container {
-max-width: 800px;
-margin: 60px auto;
-background: #ffffff;
-padding: 40px;
-border-radius: 20px;
-box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-text-align: center;
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: #2e7d32;
+    color: white;
 }
 
-
-/* ====== TITLE ====== */
-h1 {
-font-size: 2.4rem;
-color: #2e7d32;
-margin-bottom: 10px;
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
 }
 
-
-p {
-font-size: 1.1rem;
-line-height: 1.6;
-margin-bottom: 20px;
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: url('mountain.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
 }
 
-
-/* ====== BUTTON ====== */
+/* FUN FACT BUTTON */
 button {
-padding: 12px 26px;
-font-size: 1.1rem;
-border: none;
-border-radius: 14px;
-cursor: pointer;
-background: #388e3c;
-color: white;
-transition: 0.3s ease;
-margin-top: 10px;
+    padding: 12px 20px;
+    background: #388e3c;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: 0.3s;
 }
-
 
 button:hover {
-background: #2e7d32;
-transform: scale(1.05);
+    background: #2e7d32;
+    transform: scale(1.05);
 }
-
 
 #message {
-margin-top: 25px;
-font-weight: bold;
-color: #1b5e20;
-font-size: 1.2rem;
-min-height: 20px;
-}
-
-
-/* ====== FACT CARD (OPTIONAL FOR FUTURE CONTENT) ====== */
-.fact-card {
-background: #f1f8e9;
-padding: 20px;
-border-radius: 15px;
-margin-top: 25px;
-box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-}
-
-
-.fact-card h2 {
-color: #33691e;
-font-size: 1.6rem;
-margin-bottom: 10px;
-}
-
-
-.fact-card ul {
-text-align: left;
-padding-left: 20px;
-}
-
-
-.fact-card li {
-margin-bottom: 8px;
-line-height: 1.5;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #1b5e20;
 }
