@@ -64,30 +64,3 @@ closeModal.addEventListener("click", () => {
 // TAMPILKAN SAAT AWAL
 // ========================
 renderCards();
-// ===========================
-// NAVBAR ACTIVE ON SCROLL
-// ===========================
-const sections = document.querySelectorAll("section, header");
-const navLinks = document.querySelectorAll(".nav-link");
-
-window.addEventListener("scroll", () => {
-  let current = "";
-
-  sections.forEach(sec => {
-    const top = window.scrollY;
-    const offset = sec.offsetTop - 200;
-    const height = sec.offsetHeight;
-
-    if (top >= offset && top < offset + height) {
-      current = sec.getAttribute("id");
-    }
-  });
-
-  navLinks.forEach(link => {
-    link.classList.remove("active");
-    if (link.getAttribute("href").includes(current)) {
-      link.classList.add("active");
-    }
-  });
-});
-
