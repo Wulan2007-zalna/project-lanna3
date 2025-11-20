@@ -1,6 +1,4 @@
-// ========================
-// DATA GUNUNG
-// ========================
+
 const mountains = [
   { name: "Semeru", area: "Malang / Lumajang", elev: 3676, desc: "Gunung tertinggi di Pulau Jawa dan sangat populer bagi pendaki.", fact: "Puncaknya bernama Mahameru." },
   { name: "Bromo", area: "Probolinggo", elev: 2329, desc: "Gunung berapi aktif dengan kawah ikonik.", fact: "Memiliki upacara Yadnya Kasada." },
