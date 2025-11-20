@@ -111,26 +111,24 @@ const modal = document.getElementById("modal");
 const closeModalBtn = document.getElementById("closeModal");
 
 // RENDER KARTU GUNUNG
-function renderMountains(data) {
+function renderCards(list) {
   grid.innerHTML = "";
 
-  data.forEach(m => {
+  list.forEach(m => {
     const card = document.createElement("div");
     card.className = "card";
 
     card.innerHTML = `
-      <img src="${m.img}" alt="${m.name}">
-      <div class="card-info">
-        <h3>${m.name}</h3>
-        <p>${m.area}</p>
-        <p>Ketinggian: ${m.elev} mdpl</p>
-      </div>
+      <h3>${m.name}</h3>
+      <p>${m.area}</p>
+      <p class="height">Ketinggian: ${m.elev} mdpl</p>
     `;
 
     card.addEventListener("click", () => openModal(m));
     grid.appendChild(card);
   });
 }
+
 
 // MODAL DETAIL
 function openModal(m) {
