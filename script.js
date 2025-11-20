@@ -2,136 +2,41 @@
 // DATA GUNUNG
 // ========================
 const mountains = [
-  {
-    name: "Semeru",
-    area: "Malang / Lumajang",
-    elev: 3676,
-    desc: "Gunung tertinggi di Pulau Jawa dan sangat populer bagi para pendaki.",
-    fact: "Puncaknya bernama Mahameru.",
-    img: ""
-  },
-  {
-    name: "Bromo",
-    area: "Probolinggo",
-    elev: 2329,
-    desc: "Gunung berapi aktif dengan kawah yang sangat ikonik.",
-    fact: "Memiliki upacara adat Yadnya Kasada setiap tahun.",
-    img: ""
-  },
-  {
-    name: "Ijen",
-    area: "Bondowoso / Banyuwangi",
-    elev: 2799,
-    desc: "Terkenal dengan blue fire dan danau kawah asam terbesar di dunia.",
-    fact: "Fenomena blue fire hanya ada dua di dunia.",
-    img: ""
-  },
-  {
-    name: "Raung",
-    area: "Banyuwangi / Bondowoso / Jember",
-    elev: 3344,
-    desc: "Gunung dengan kaldera besar dan trek terberat di Jawa Timur.",
-    fact: "Kaldera Raung termasuk yang terbesar di Indonesia!",
-    img: ""
-  },
-  {
-    name: "Arjuno",
-    area: "Batu / Pasuruan",
-    elev: 3339,
-    desc: "Gunung kembar dengan Welirang dan memiliki jalur pendakian panjang.",
-    fact: "Banyak situs kuno ditemukan di jalur pendakian.",
-    img: ""
-  },
-  {
-    name: "Welirang",
-    area: "Batu / Mojokerto",
-    elev: 3156,
-    desc: "Gunung berapi dengan tambang belerang aktif.",
-    fact: "Nama Welirang berarti 'belerang'.",
-    img: ""
-  },
-  {
-    name: "Butak",
-    area: "Batu / Malang",
-    elev: 2868,
-    desc: "Gunung hutan asri dengan sabana luas di puncaknya.",
-    fact: "Sering dijuluki Semeru versi mini karena sabananya.",
-    img: ""
-  },
-  {
-    name: "Kawi",
-    area: "Malang / Blitar",
-    elev: 2651,
-    desc: "Gunung bersejarah dengan banyak petilasan.",
-    fact: "Sering dikaitkan dengan legenda Rara Anteng dan Joko Seger.",
-    img: ""
-  },
-  {
-    name: "Anjasmoro",
-    area: "Mojokerto / Jombang",
-    elev: 2277,
-    desc: "Gunung yang memiliki banyak puncak dalam satu rangkaian.",
-    fact: "Termasuk gunung yang jarang dieksplor pendaki.",
-    img: ""
-  },
-  {
-    name: "Wilis",
-    area: "Kediri / Nganjuk / Madiun",
-    elev: 2563,
-    desc: "Gunung non-aktif dengan hutan lebat dan jalur mistis.",
-    fact: "Puncaknya disebut 'Puncak Limas'.",
-    img: ""
-  },
-  {
-    name: "Kelud",
-    area: "Kediri",
-    elev: 1731,
-    desc: "Gunung berapi aktif dengan sejarah erupsi besar.",
-    fact: "Erupsi 2014 menghancurkan anak gunung di tengah kawah.",
-    img: ""
-  },
-  {
-    name: "Lamongan",
-    area: "Lumajang",
-    elev: 1651,
-    desc: "Gunung kecil namun dikelilingi ratusan maar dan danau vulkanik.",
-    fact: "Memiliki lebih dari 60 danau kecil (maar).",
-    img: ""
-  },
-  {
-    name: "Panderman",
-    area: "Batu",
-    elev: 2045,
-    desc: "Gunung favorit pendaki pemula karena jalurnya pendek.",
-    fact: "Pemandangan Kota Batu terlihat jelas dari puncaknya.",
-    img: ""
-  }
+  { name: "Semeru", area: "Malang / Lumajang", elev: 3676, desc: "Gunung tertinggi di Pulau Jawa dan sangat populer bagi pendaki.", fact: "Puncaknya bernama Mahameru." },
+  { name: "Bromo", area: "Probolinggo", elev: 2329, desc: "Gunung berapi aktif dengan kawah ikonik.", fact: "Memiliki upacara Yadnya Kasada." },
+  { name: "Ijen", area: "Bondowoso / Banyuwangi", elev: 2799, desc: "Terkenal dengan blue fire dan danau kawah asam.", fact: "Blue fire hanya ada di 2 tempat di dunia." },
+  { name: "Raung", area: "Banyuwangi / Jember", elev: 3344, desc: "Kaldera besar dan jalur ekstrem.", fact: "Kalderanya termasuk terbesar di Indonesia!" },
+  { name: "Arjuno", area: "Batu / Pasuruan", elev: 3339, desc: "Gunung kembar dengan Welirang.", fact: "Banyak situs kuno ditemukan." },
+  { name: "Welirang", area: "Batu / Mojokerto", elev: 3156, desc: "Gunung belerang aktif.", fact: "Welirang berarti belerang." },
+  { name: "Butak", area: "Batu / Malang", elev: 2868, desc: "Gunung dengan sabana luas.", fact: "Dijuluki Semeru mini." },
+  { name: "Kawi", area: "Malang / Blitar", elev: 2651, desc: "Penuh legenda dan petilasan.", fact: "Dikaitkan dengan legenda Rara Anteng." },
+  { name: "Anjasmoro", area: "Mojokerto", elev: 2277, desc: "Memiliki banyak puncak.", fact: "Termasuk gunung jarang dieksplor." },
+  { name: "Wilis", area: "Kediri", elev: 2563, desc: "Gunung hutan lebat.", fact: "Puncaknya bernama Puncak Limas." },
+  { name: "Kelud", area: "Kediri", elev: 1731, desc: "Gunung dengan sejarah erupsi besar.", fact: "Erupsi 2014 meratakan anak gunungnya." },
+  { name: "Lamongan", area: "Lumajang", elev: 1651, desc: "Dikelilingi ratusan danau kecil (maar).", fact: "Ada lebih dari 60 maar vulkanik." },
+  { name: "Panderman", area: "Batu", elev: 2045, desc: "Favorit pemula dengan jalur pendek.", fact: "Pemandangannya indah ke arah Kota Batu." }
 ];
-
 
 // ========================
 // ELEMENT HTML
 // ========================
 const grid = document.getElementById("mountain-list");
 const modal = document.getElementById("modal");
-const closeModalBtn = document.getElementById("closeModal");
-const search = document.getElementById("search");
+const closeModal = document.getElementById("closeModal");
 
-
-function renderCards(list) {
+// ========================
+// RENDER KARTU GUNUNG
+// ========================
+function renderCards() {
   grid.innerHTML = "";
 
-  list.forEach(m => {
+  mountains.forEach(m => {
     const card = document.createElement("div");
     card.className = "card";
-
-    // Tidak ada tag <img> sama sekali
     card.innerHTML = `
-      <div class="card-info">
-        <h3>${m.name}</h3>
-        <p>${m.area}</p>
-        <p class="height">Ketinggian: ${m.elev} mdpl</p>
-      </div>
+      <h3>${m.name}</h3>
+      <p>${m.area}</p>
+      <p class="height">Ketinggian: ${m.elev} mdpl</p>
     `;
 
     card.addEventListener("click", () => openModal(m));
@@ -139,14 +44,10 @@ function renderCards(list) {
   });
 }
 
-
 // ========================
-// MODAL DETAIL
+// MODAL
 // ========================
 function openModal(m) {
-  document.getElementById("modalImg").src = "";
-  document.getElementById("modalImg").style.display = "none";
-
   document.getElementById("modalTitle").textContent = m.name;
   document.getElementById("modalDesc").textContent = m.desc;
   document.getElementById("modalMeta").textContent = `${m.area} • ${m.elev} mdpl`;
@@ -155,27 +56,11 @@ function openModal(m) {
   modal.style.display = "flex";
 }
 
-closeModalBtn.addEventListener("click", () => {
+closeModal.addEventListener("click", () => {
   modal.style.display = "none";
 });
 
-
 // ========================
-// SEARCH FITUR
+// TAMPILKAN SAAT AWAL
 // ========================
-search.addEventListener("input", () => {
-  const keyword = search.value.toLowerCase();
-  const filtered = mountains.filter(m =>
-    m.name.toLowerCase().includes(keyword)
-  );
-
-  renderCards(filtered);
-});
-
-
-// ========================
-// RENDER AWAL
-// ========================
-document.addEventListener("DOMContentLoaded", () => {
-  renderCards(mountains);
-});
+renderCards();
