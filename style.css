@@ -96,7 +96,7 @@ body {
   position: absolute;
   top: 12px;
   right: 12px;
-  background: #87CEFA;
+  background: #1E90FF;
   color: white;
   border: none;
   padding: 6px 12px;
@@ -109,6 +109,6 @@ body {
   text-align: center;
   padding: 20px;
   margin-top: 40px;
-  background: #2e7d32;
+  background: #87CEFA;
   color: white;
 }
