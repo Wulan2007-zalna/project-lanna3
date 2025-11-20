@@ -1,3 +1,6 @@
+/* ============================
+   GLOBAL
+============================ */
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -5,9 +8,13 @@ body {
   background: #e8f5e9;
 }
 
+/* ============================
+   NAVBAR
+============================ */
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 40px;
   background: #2e7d32;
   color: white;
@@ -17,55 +24,89 @@ body {
   display: flex;
   gap: 20px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
+/* ============================
+   HERO
+============================ */
 .hero {
   text-align: center;
   padding: 80px 20px;
-  background: url('mountain.jpg');
-  background-size: cover;
-  background-position: center;
+  background: #4caf50;  /* DIBUAT WARNA BIASA, karena kamu tidak ingin gambar */
   color: white;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* ============================
+   SEARCH & FILTER
+============================ */
 .controls {
-  margin-top: 20px;
+  margin-top: 25px;
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
 }
 
+.controls input {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 260px;
+  font-size: 1rem;
+}
+
+/* ============================
+   GRID LIST GUNUNG
+============================ */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  gap: 25px;
   padding: 40px;
 }
 
+/* ============================
+   CARD GUNUNG TANPA GAMBAR
+============================ */
 .card {
   background: white;
-  border-radius: 12px;
-  overflow: hidden;
+  border-radius: 14px;
+  padding: 20px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .card:hover {
-  transform: scale(1.03);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
 
-.card img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
+.card h3 {
+  margin: 0 0 10px;
+  color: #2e7d32;
 }
 
-.card-info {
-  padding: 15px;
+.card p {
+  margin: 5px 0;
 }
 
+.height {
+  font-weight: bold;
+  color: #1b5e20;
+}
+
+/* ============================
+   MODAL
+============================ */
 .modal {
   position: fixed;
   inset: 0;
@@ -77,22 +118,41 @@ body {
 
 .modal-content {
   background: white;
-  padding: 20px;
+  padding: 25px;
   border-radius: 12px;
-  max-width: 400px;
+  width: 90%;
+  max-width: 420px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+}
+
+/* Modal Title */
+.modal-content h2 {
+  margin-top: 0;
+  color: #2e7d32;
+}
+
+/* Remove modal image completely since you don't want it */
+#modalImg {
+  display: none !important;
 }
 
 .close {
-  background: red;
+  background: #d32f2f;
   border: none;
   color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
   float: right;
   cursor: pointer;
 }
 
+/* ============================
+   FOOTER
+============================ */
 .footer {
   text-align: center;
   padding: 20px;
   background: #2e7d32;
   color: white;
+  margin-top: 40px;
 }
