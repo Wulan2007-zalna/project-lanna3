@@ -1,34 +1,91 @@
 body {
-font-family: Arial, sans-serif;
-background: #f2f2f2;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
+font-family: "Poppins", Arial, sans-serif;
+background: linear-gradient(135deg, #e0f2f1, #b2dfdb);
 margin: 0;
+padding: 0;
+color: #333;
 }
 
 
 .container {
-background: white;
-padding: 30px;
-border-radius: 15px;
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+max-width: 800px;
+margin: 60px auto;
+background: #ffffff;
+padding: 40px;
+border-radius: 20px;
+box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 text-align: center;
 }
 
 
+/* ====== TITLE ====== */
+h1 {
+font-size: 2.4rem;
+color: #2e7d32;
+margin-bottom: 10px;
+}
+
+
+p {
+font-size: 1.1rem;
+line-height: 1.6;
+margin-bottom: 20px;
+}
+
+
+/* ====== BUTTON ====== */
 button {
-padding: 10px 20px;
-font-size: 16px;
+padding: 12px 26px;
+font-size: 1.1rem;
 border: none;
-border-radius: 10px;
+border-radius: 14px;
 cursor: pointer;
-background: #4a90e2;
+background: #388e3c;
 color: white;
+transition: 0.3s ease;
+margin-top: 10px;
 }
 
 
 button:hover {
-background: #3578c7;
+background: #2e7d32;
+transform: scale(1.05);
+}
+
+
+#message {
+margin-top: 25px;
+font-weight: bold;
+color: #1b5e20;
+font-size: 1.2rem;
+min-height: 20px;
+}
+
+
+/* ====== FACT CARD (OPTIONAL FOR FUTURE CONTENT) ====== */
+.fact-card {
+background: #f1f8e9;
+padding: 20px;
+border-radius: 15px;
+margin-top: 25px;
+box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+
+.fact-card h2 {
+color: #33691e;
+font-size: 1.6rem;
+margin-bottom: 10px;
+}
+
+
+.fact-card ul {
+text-align: left;
+padding-left: 20px;
+}
+
+
+.fact-card li {
+margin-bottom: 8px;
+line-height: 1.5;
 }
