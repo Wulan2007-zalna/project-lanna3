@@ -1,16 +1,11 @@
-/* ============================
-   GLOBAL
-============================ */
+/* GLOBAL */
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
-  padding: 0;
   background: #e8f5e9;
 }
 
-/* ============================
-   NAVBAR
-============================ */
+/* NAVBAR */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -25,78 +20,52 @@ body {
   gap: 20px;
   list-style: none;
   margin: 0;
-  padding: 0;
 }
 
-/* ============================
-   HERO
-============================ */
+/* HERO */
 .hero {
   text-align: center;
   padding: 80px 20px;
-  background: #4caf50;  /* DIBUAT WARNA BIASA, karena kamu tidak ingin gambar */
+  background: #4caf50;
   color: white;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   margin-bottom: 10px;
 }
 
-/* ============================
-   SEARCH & FILTER
-============================ */
-.controls {
-  margin-top: 25px;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.controls input {
-  padding: 12px 15px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  width: 260px;
-  font-size: 1rem;
-}
-
-/* ============================
-   GRID LIST GUNUNG
-============================ */
+/* GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
+  gap: 24px;
   padding: 40px;
 }
 
-/* ============================
-   CARD GUNUNG TANPA GAMBAR
-============================ */
+/* CARD */
 .card {
   background: white;
-  border-radius: 14px;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transform: translateY(-6px);
 }
 
 .card h3 {
-  margin: 0 0 10px;
+  margin: 0;
   color: #2e7d32;
 }
 
 .card p {
-  margin: 5px 0;
+  margin: 6px 0;
 }
 
 .height {
@@ -104,9 +73,7 @@ body {
   color: #1b5e20;
 }
 
-/* ============================
-   MODAL
-============================ */
+/* MODAL */
 .modal {
   position: fixed;
   inset: 0;
@@ -118,43 +85,30 @@ body {
 
 .modal-content {
   background: white;
-  padding: 25px;
+  padding: 22px;
   border-radius: 12px;
   width: 90%;
   max-width: 420px;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.3);
-}
-
-/* Modal Title */
-.modal-content h2 {
-  margin-top: 0;
-  color: #2e7d32;
-}
-
-/* Remove modal image completely since you don't want it */
-#filter,
-#search {
-  display: none !important;
+  position: relative;
 }
 
 .close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
   background: #d32f2f;
-  border: none;
   color: white;
-  padding: 8px 12px;
+  border: none;
+  padding: 6px 12px;
   border-radius: 6px;
-  float: right;
   cursor: pointer;
 }
 
-/* ============================
-   FOOTER
-============================ */
+/* FOOTER */
 .footer {
   text-align: center;
   padding: 20px;
+  margin-top: 40px;
   background: #2e7d32;
   color: white;
-  margin-top: 40px;
 }
-
