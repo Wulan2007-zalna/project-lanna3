@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GeoJatim — Edukasi Gunung & Geowisata Jawa Timur</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeoJatim</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -28,28 +27,28 @@
     <p>Temukan gunung-gunung populer, baca penjelasan singkat, dan dapatkan fun fact menarik.</p>
   </header>
 
-  <!-- LIST GUNUNG -->
+  <!-- LIST GUNUNG (WAJIB ADA!) -->
   <main class="container">
     <section class="grid" id="mountain-list"></section>
-
-    <!-- MODAL -->
-    <div class="modal" id="modal">
-      <div class="modal-content">
-        <button class="close" id="closeModal">✕</button>
-
-        <h2 id="modalTitle"></h2>
-        <p id="modalDesc"></p>
-        <p class="meta" id="modalMeta"></p>
-        <p><strong>Fun Fact:</strong> <span id="modalFact"></span></p>
-      </div>
-    </div>
   </main>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <button class="close" id="closeModal">✕</button>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDesc"></p>
+      <p class="meta" id="modalMeta"></p>
+      <p><strong>Fun Fact:</strong> <span id="modalFact"></span></p>
+    </div>
+  </div>
 
   <!-- FOOTER -->
   <footer class="footer">
     <p>© GeoJatim — Edukasi Gunung & Geowisata Jawa Timur</p>
   </footer>
 
+  <!-- SCRIPT -->
   <script src="script.js"></script>
 </body>
 </html>
